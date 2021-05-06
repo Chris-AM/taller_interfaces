@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="header">
+        <p>Aquí va el logo del cft</p>
+    </div>
+    <div class="container">
+
+        <div class="menu">
+            <ul>
+                <li> <a target="_blank" href="http://cftla.umas.cl/alumnosnet/SituActual.asp"> perfil</a></li>
+                <li> <a target="_blank" href="http://cftla.umas.cl/alumnosnet/malla-curri.asp"> malla</a></li>
+                <li> <a target="_blank" href="http://cftla.umas.cl/alumnosnet/concent-notas.asp"> notas</a></li>
+            </ul>
+        </div>
+        <!--menu-->
+
+        <div class="formulario">
+            <h1>Formulario Alumnos </h1>
+            <form>
+                <fieldset>
+                    <legend>Llena estos campos para poder actualizar tus datos 1er semetre 2021</legend>
+                    <div>
+                        <div>
+                            <label>Rut: </label>
+                            <input type="text" placeholder="12.345.678-9" required />
+                        </div>
+                        <div>
+                            <label>Primer Nombre: </label>
+                            <input type="text" placeholder="Primer Nombre" required />
+                        </div>
+                        <div>
+                            <label>Segundo Nombre: </label>
+                            <input type="text" placeholder="Segundo Nombre" required />
+                        </div>
+                        <div>
+                            <label>Segundo Apellido: </label>
+                            <input type="text" placeholder="Primer Apellido" required />
+                        </div>
+                        <div>
+                            <label>Segundo Apellido: </label>
+                            <input type="text" placeholder="Segundo Nombre" required />
+                        </div>
+                        <div>
+                            <label>Fecha de nacimiento </label>
+                            <input type="date" min="1921-01-01" max="2010-12-12" required />
+                        </div>
+                        <div>
+                            <label>Género</label>
+                            <input type="text" placeholder="Género" required />
+                        </div>
+                        <div>
+                            <label>Teléfono: </label>
+                            <input type="tel" placeholder="Teléfono" required />
+                        </div>
+                        <div>
+                            <label>Correo: </label>
+                            <input type="email" placeholder="Correo" required />
+                        </div>
+                        <div>
+                            <label>Mensaje: </label>
+                            <textarea required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <input name="send" type="submit" value="Envíar" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--form-->
+    </div>
+    <!--container-->
+
+</body>
+
+</html>
