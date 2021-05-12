@@ -1,0 +1,164 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.width100p {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    margin: 0 0% 10% 0%;
+    height: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #ec8c2c;
+    height: 8rem;
+    background-image: url(../assets/Logo\ CFT_horizontal_blanco.png);
+    background-size: 16rem 6rem;
+    background-repeat: no-repeat;
+    background-position: 1% 30%;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    margin-top: 1%;
+    width: 30%;
+    height: 41rem;
+    background-color: #ec8c2c;
+    display: flex;
+}
+
+.menuContainer {
+    align-items: flex-end;
+}
+
+.user {
+    width: 20%;
+    margin: 6% 9% -8% -2%;
+}
+
+.malla {
+    width: 20%;
+    margin: 6% 9% -8% -3%;
+}
+
+.grades {
+    width: 30%;
+    margin: -4% 5% -14% -11%;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.formulario {
+    width: 100%;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario div {
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario fieldset {
+    display: flex;
+}
+
+.formulario label {
+    margin-left: 12%;
+}
+
+.formulario input {
+    width: 33%;
+    margin: auto;
+    margin-top: -2%;
+}
+
+.genre {
+    flex-direction: row !important;
+}
+
+.genreContainer {
+    margin: 0 0% -2% 15%;
+}
+
+.genreContainer input {
+    margin: 0 0 -6% 85%;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+.message label {
+    margin-bottom: 2%;
+}
+
+.message textarea {
+    height: 5rem;
+    resize: none;
+    width: 34%;
+    margin: -4% 0 0% 33%;
+}
+
+.btnSend {
+    width: 10rem;
+    height: 3rem;
+    margin: -4% 0 0 15%;
+    background-color: #ec8c2c;
+    border: aliceblue;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    background-color: #444242;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer div {
+    width: 33%;
+}
+
+.footer img {
+    width: 58%;
+    margin-top: 7%;
+    margin-left: 7%;
+}
