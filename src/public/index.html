@@ -41,33 +41,33 @@
 
         <div class="formulario">
             <h2>Formulario Alumnos </h2>
-            <form>
+            <form method="POST" name="formulario">
                 <fieldset>
                     <legend>Llena estos campos para poder actualizar tus datos 1er semetre 2021</legend>
                     <div class="width100p">
                         <div>
                             <label>Rut: </label>
-                            <input type="number" placeholder="12.345.678-9" required />
+                            <input name="rut" type="number" placeholder="12.345.678-9" />
                         </div>
                         <div>
                             <label>Primer Nombre: </label>
-                            <input type="text" placeholder="Primer Nombre" required />
+                            <input name="primerNombre" type="text" placeholder="Primer Nombre" />
                         </div>
                         <div>
                             <label>Segundo Nombre: </label>
-                            <input type="text" placeholder="Segundo Nombre" required />
+                            <input name="segundoNombre" type="text" placeholder="Segundo Nombre" />
+                        </div>
+                        <div>
+                            <label>Primer Apellido: </label>
+                            <input name="primerApellido" type="text" placeholder="Primer Apellido" />
                         </div>
                         <div>
                             <label>Segundo Apellido: </label>
-                            <input type="text" placeholder="Primer Apellido" required />
-                        </div>
-                        <div>
-                            <label>Segundo Apellido: </label>
-                            <input type="text" placeholder="Segundo Nombre" required />
+                            <input name="SegundoApellido" type="text" placeholder="Segundo Nombre" />
                         </div>
                         <div>
                             <label>Fecha de nacimiento </label>
-                            <input type="date" min="1921-01-01" max="2010-12-12" required />
+                            <input name="fechaNacimiento" type="date" min="1921-01-01" max="2010-12-12" />
                         </div>
                         <div class="genre">
                             <label>Género</label>
@@ -90,20 +90,21 @@
                         </div>
                         <div>
                             <label>Teléfono: </label>
-                            <input type="number" placeholder="Teléfono " required />
+                            <input name="telefono" type="number" placeholder="Teléfono " />
                         </div>
                         <div>
                             <label>Correo: </label>
-                            <input type="email" placeholder="Correo " required />
+                            <input name="correo" type="email" placeholder="Correo " />
                         </div>
                         <div class="message ">
                             <label>Mensaje: </label>
-                            <textarea required></textarea>
+                            <textarea name="mensaje"></textarea>
                         </div>
                     </div>
                 </fieldset>
                 <div>
-                    <button onclick="reset()" class="btnSend">Enviar</button>
+                    <!--   <button onclick="reset()" class="btnSend">Enviar</button> -->
+                    <input type="submit" class="btnSend" onclick="resetForm()" value="Enviar">
                 </div>
             </form>
         </div>
