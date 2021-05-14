@@ -1,31 +1,24 @@
 console.log('Entró al html')
 
-let rut = document.forms["formulario"]["rut"].value;
-let primerNombre = document.forms["formulario"]["primerNombre"].value;
-let segundoNombre = document.forms["formulario"]["primerNombre"].value;
-let primerApellido = document.forms["formulario"]["primerNombre"].value;
-let SegundoApellido = document.forms["formulario"]["primerNombre"].value;
-let fechaNacimiento = document.forms["formulario"]["primerNombre"].value;
-let genre = document.forms["formulario"]["primerNombre"].value;
-let telefono = document.forms["formulario"]["primerNombre"].value;
-let correo = document.forms["formulario"]["primerNombre"].value;
-let mensaje = document.forms["formulario"]["primerNombre"].value;
+//const FORM = document.getElementsByTagName("form")[0];
+
+const rut = document.getElementById('rut').value;
+let primerNombre = document.getElementById("primerNombre");
+let segundoNombre = document.getElementById("segundoNombre");
+let primerApellido = document.getElementById("primerApellido");
+let SegundoApellido = document.getElementById("SegundoApellido");
+let fechaNacimiento = document.getElementById("fechaNacimiento");
+let genre = document.getElementById("genre");
+let telefono = document.getElementById("telefono");
+let correo = document.getElementById("correo");
+let mensaje = document.getElementById("mensaje");
+
 
 function resetForm() {
-    if (rut ||
-        primerNombre ||
-        segundoNombre ||
-        primerApellido ||
-        SegundoApellido ||
-        fechaNacimiento ||
-        genre ||
-        telefono ||
-        correo ||
-        mensaje === "") {
-        alert("todos los campos deben ser llenados");
-
+    valid = true;
+    if (rut == '') {
+        console.log('rut is not valid');
     } else {
-        alert("muchas gracias, nos pondremos en contacto contigo pronto");
-
+        console.log('rut: ', rut)
     }
 }
